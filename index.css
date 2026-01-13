@@ -1,0 +1,22 @@
+.cart_box{
+  position: fixed;
+  top:5px;
+  right: 5px;
+  padding: 17px;
+  background: rgb(0, 0, 0);
+  border: none;
+  border-radius: 50%;
+  justify-content: center;
+  align-content: center;
+  transition: background 0.2s,transform 0.2s;
+}
+.c_img{
+  width: 16px;
+  height: 16px;
+}
+
+
+.cart_box:hover{
+  background: #00fe04ff;
+  transform: translateY(-2px);
+}
