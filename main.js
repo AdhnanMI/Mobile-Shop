@@ -886,11 +886,7 @@ var b = document.getElementsByTagName("body")[0];
  withDelay(() => {
    renderproduc(user_input);
  });
-
-
-
-
-
+ 
 
 //  var temp = products.map((p) => p.model);
 //  var brand = [];
