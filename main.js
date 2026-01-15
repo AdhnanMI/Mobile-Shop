@@ -502,7 +502,7 @@
  spinner.className = "spinner";
 
  loader.appendChild(spinner);
-var b = document.getElementsByTagName("body")[0];
+var b = document  .getElementsByTagName("body")[0];
  b.appendChild(loader);
 
   // <!-- iNJECTION OF CSS IN HEAD -->
@@ -631,6 +631,28 @@ var b = document.getElementsByTagName("body")[0];
  margin-bottom:12px;
  border-radius:8px;
  }
+ .cart_box{
+  position: fixed;
+  top:10px;
+  right: 5px;
+  padding: 9px 40px;
+  background: rgb(0, 0, 0);
+  border: none;
+  border-radius: 10px;
+  justify-content: center;
+  align-content: center;
+  transition: background 0.2s,transform 0.2s;
+}
+.c_img{
+  width: 30px;
+  height: 30px;
+}
+
+
+.cart_box:hover{
+  background: rgb(17, 218, 20);
+  transform: translateY(-2px);
+}
    `;
  var head = document.querySelector("head");
  head.appendChild(style);
@@ -909,13 +931,13 @@ var b = document.getElementsByTagName("body")[0];
 
 
 
-// var cart_box=document.createElement("button")
-// cart_box.classList.add("cart_box")
-// var c_img=document.createElement("img")
-// c_img.src="./icons/cart-shopping-solid-full.svg"
-// c_img.classList.add("c_img")
-// cart_box.appendChild(c_img)
-// b.appendChild(cart_box)
+var cart_box=document.createElement("button")
+cart_box.classList.add("cart_box")
+var c_img=document.createElement("img")
+c_img.src="./icons/cart-shopping-solid-full.svg"
+c_img.classList.add("c_img")
+cart_box.appendChild(c_img)
+b.appendChild(cart_box)
 
 
 
